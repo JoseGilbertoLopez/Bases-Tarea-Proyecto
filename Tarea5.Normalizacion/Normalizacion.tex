@@ -215,7 +215,9 @@
     $F'=\{ B \rightarrow D, CD \rightarrow A, E \rightarrow C\}$\\
     $$\{ B\}+=\{ B,D\}$$
     $\therefore$ E no es superfluo.
-    F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo
+    F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo\\
+    
+     $F=\{B \rightarrow DE, CD \rightarrow A, E \rightarrow C\}$\\
 
     La llave de R es: B
 
@@ -229,25 +231,7 @@
 
     La llave de R esta contenido en S entonces ya esta normalizado
 
-    4ta Forma Normal
 
-    Llave $R: B$
-
-    $B\rightarrow DE$
-
-    Esta dependencia cumpla con la regla de normalizacio
-
-    las demas dependencias son violaciones a la 4ta forma normal
-
-    S(E,C) con $E \rightarrow C$, una llave para S es E normalizado
-
-    T(E,C,D,A) Llave de T = ECD es violacion.
-
-    Sea:
-
-    U(C,D,A) Llave de U = CD y la dependencia es $CD \rightarrow A$ normalizado
-
-    V(C) $C\rightarrow C$ es trivial ya esta normalizado
 
     \item[(6)] Para cada uno de los esquemas, con su respectivo conjunto de dependencias multivaluadas,
     resuelve los siguientes puntos:
@@ -261,26 +245,26 @@
 
     Normaliza de acuerdo a la $4NF$
 
-    a. Llave para R: AB
+    a. Llave para R: ABC
     $AB\twoheadrightarrow C$
 
     $B\rightarrow D \quad violacion$
 
     S(B,D) con $B \rightarrow D$ Llave B para S normalizado
 
-    T(B,A,C) con $AB\twoheadrightarrow C$\\
-    Con $DMV= \{ AB \twoheadrightarrow C\} $ La llave es AB que es la llave de R esta normalizado\\
-    \\
-    $b. Llave para R: AB$\\
+    T(B,A,C) con $AB\twoheadrightarrow C$ La llave es AB no puede haber violacion\\
+    $b. Llave para R: AB$E\\
     $DMV= \{A \twoheadrightarrow B, AB\rightarrow CE,  A\rightarrow D \}$
 
-    $AB \rightarrow CE$ Ya esta normalizado
-    $A \rightarrow D$ violacion
-    S(A,D)$ con A\rightarrow D$ La llave de S es A normalizado
+    $AB \rightarrow CE$ Violacion
+    $A \rightarrow D$ Violacion
+    S(A,B,C)$ con AB\rightarrow C$ La llave de S es AB no hay violacion normalizado
 
-    T(A,C,E,B) con $DMV \{ A \twoheadrightarrow B\}$ La llave es AB.
+    T(A,D,E) con $A\Rightarrow D$ llave es Violacion
+    
+    U(A,D) con $A \Rightarrow D$ La llave es A no hay violacion
+    V(A,E) con $AE \Rightarrow AE$ trivial normalizado.
 
-    U(A,B,C,E) con $Ab \rightarrow CE$ Llave AB que es la llave de R normalizado
 
     V(A,B) con $A \twoheadrightarrow B$ Trivial Normalizado.
     \item[(7)] Se tiene la siguiente relación:
