@@ -14,24 +14,24 @@
   \begin{enumerate}
     \item[(1)] Preguntas de repaso.
     \begin{enumerate}
-      \item[(1)] ¿Qué es una dependencia funcional y comó se define?
+      \item[(a)] ¿Qué es una dependencia funcional y comó se define?
       Se trata de una relación unididreccional entre 2 atributos de tal forma que
       en un momento dado, para cada valor único de $A$, sólo un valor de $B$ se
       asocia con él através de la relación.
-      \item[(2)] ¿Para qué sirve el concepto de dependencia en la normalización?
+      \item[(b)] ¿Para qué sirve el concepto de dependencia en la normalización?
         \begin{enumerate}
           \item Ayudan a especificar formalmente cuando un diseño es correcto.
           \item Especifiar restricciones sobre el conjunto de relaciones.
           \item Examinar las relaciones y determinar si son legales bajo un
           conjunto de dependencias funcionales dado.
         \end{enumerate}
-      \item[(3)] Sea $A$ la llave de $R(A,B,C)$. indica todas las dependencias
+      \item[(c)] Sea $A$ la llave de $R(A,B,C)$. indica todas las dependencias
       funcionales que implica $A$.
       \begin{align*}
         A &\rightarrow A & A &\rightarrow B & A &\rightarrow C
       \end{align*}
       $$ A += \{A,B,C\} $$
-      \item[(4)] ¿Qué es una forma normal? ¿Cuál es el objetivo de normalizar un
+      \item[(d)] ¿Qué es una forma normal? ¿Cuál es el objetivo de normalizar un
       modelo de datos?
         \begin{enumerate}
           \item Tecnica desarrollada inicialmente por E.F.Codd en 1972, para diseñar la
@@ -43,7 +43,7 @@
           \item Cuando una regla no cumple, el esquema de relación se debe
           descomponer en varios esquemas que sí la cumplan por separado.
         \end{enumerate}
-      \item[(5)] En qué casos es preferible lograr 3NF en vez de BCNF
+      \item[(e)] En qué casos es preferible lograr 3NF en vez de BCNF
 
       La forma normal de Boyce-Codd requiere que no existan dependencias
       funcionales no triviales de los atributos que no sean un conjunto de la
@@ -167,9 +167,9 @@
     ¿R cumple con BCNF? ¿Cumple con 3NF? (en caso contrario normaliza)\\
     Se ha decidido dividir R en las siguientes relaciones S(A,B,C,D,F) y T(C,E), ¿se puede recuperar la
     información de R?
-    $$\{A\}+=\{A\}$$
-    $$\{F\}+=\{\}$$
-    $$\{B\}+=\{B,D,E,C,A\}$$
+    $$\{ A\}+=\{ A\}$$
+    $$\{ F\}+=\{ F\}$$
+    $$\{ B\}+=\{ B,D,E,C,A\}$$
     Llave candidata: B
 
     3ra Forma Normal
@@ -178,11 +178,11 @@
     $$BD \rightarrow E$$
     ¿B superfluo?
     $$D\rightarrow E$$
-    $$\{D\}+=\{D,E,C,A\}$$
+    $$\{ D\}+=\{ D,E,C,A\}$$
     $\therefore$ B no es superfluo
     ¿D superfluo?
     $$B\rightarrow E$$
-    $$\{B\}+=\{B,D,E,C,A\}$$
+    $$\{ B\}+=\{ B,D,E,C,A\}$$
     $\therefore$ D es superfluo
 
     $F=\{B \rightarrow E, CD \rightarrow A, E \rightarrow C, B\rightarrow D\}$\\
@@ -191,13 +191,13 @@
     ¿C superfluo?
 
     $$D\rightarrow A$$
-    $\{D\}+=\{D,A\}$
+    $\{ D\}+=\{ D,A\}$
     $\therefore$ C no es superfluo
 
     ¿D superfluo?
 
     $C \rightarrow A$
-    $$\{C\}+=\{C,A\}$$
+    $$\{ C\}+=\{ C,A\}$$
     $\therefore$ D no es superfluo
 
     Superfluo Derecho:
@@ -207,13 +207,13 @@
     ¿D superfluo?
 
     $F'=\{B \rightarrow E, CD \rightarrow A, E\rightarrow C\}$\\
-    $$\{B\}+=\{B,E,C\}$$
+    $$\{ B\}+=\{ B,E,C\}$$
     $\therefore$ D no es superfluo
 
     ¿E superfluo?
 
-    $F'=\{B \rightarrow D, CD \rightarrow A, E \rightarrow C\}$\\
-    $$\{B\}+=\{B,D\}$$
+    $F'=\{ B \rightarrow D, CD \rightarrow A, E \rightarrow C\}$\\
+    $$\{ B\}+=\{ B,D\}$$
     $\therefore$ E no es superfluo.
     F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo
 
@@ -284,21 +284,42 @@
 
     V(A,B) con $A \twoheadrightarrow B$ Trivial Normalizado.
     \item[(7)] Se tiene la siguiente relación:
-    $$R(idEnfermo,idCirujano,fechaCirugía,nombreEnfermo,direcciónEnfermo,
-    nombreCirujano,nombreCirugía,medicinaSuministrada,efectosSecundarios)$$
-    Digamos que: idEnfermo
+    \begin{multline*}
+      R(idEnfermo,idCirujano,fechaCirugía,nombreEnfermo,direcciónEnfermo, \\
+      nombreCirujano,nombreCirugía,medicinaSuministrada,efectosSecundarios)
+    \end{multline*}
+    Digamos que:
+    \begin{align*}
+      idEnfermo &:= IDE & idCirujano &:= IDC \\
+      nombreEnfermo &:= NE & nombreCirujano &:= NC  \\
+      direccionEnfermo &:= DE & medicinaSuministrada &:= M & \\
+      fechaCirugía &:= FC & efectosSecundarios &:= E \\
+      nombreCirugía &:= NC
+    \end{align*}
     \begin{enumerate}
       \item Expresa las siguientes restricciones en forma de dependencias
       funcionales: A un enfermo sólo se le da una medicina suministrada. Sólo
       puede existir un efecto secundario por medicamento.
       \begin{align*}
-        idEnfermo &\rightarrow nombreEnfermo & idEnfermo &\rightarrow direcciónEnfermo
-        idEnfermo &\rightarrow medicinaSuministrada
-        idCirujano &\rightarrow nombreCirujano &
+        IDE &\rightarrow M  & M &\rightarrow E
       \end{align*}
       \item Especifica otras dependencias funcionales o multivaluadas que deban
       satisfacerse en la relación R. Por cada una que definas, deberá aparecer
       un enunciado en español como en el inciso anterior.
+
+        $IDE \rightarrow NE$ Un enfermo sólo tiene un nombre.
+
+        $IDE \rightarrow DE$ Un enfermo sólo tiene una dirección.
+
+        $IDC \rightarrow NC$ Un cirujano sólo tiene un nombre.
+
+        $NC \rightarrow FC$ Una cirugía sólo tiene una fecha.
+
+        $FC \twoheadrightarrow NC$ Una fecha puede tener varias cirugías.
+
+        $E \twoheadrightarrow M$ Un efecto Secundario puede ser provacado por
+        varios medicamentos.
+
       \item Normaliza utilizando el conjunto de dependencias establecido en los
       puntos anteriores.
     \end{enumerate}
