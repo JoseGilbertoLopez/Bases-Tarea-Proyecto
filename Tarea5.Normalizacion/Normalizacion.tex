@@ -76,6 +76,8 @@
       \begin{enumerate}
         \item[(a)] $R(A,B,C,D,E)$ con $F=\{ AB \rightarrow CD, E \rightarrow C
         ,D \rightarrow B \}$
+        \item[(b)] $R(A,B,C,D,E)$ con $F= \{ AB \rightarrow C, DE \rightarrow C,
+        B \rightarrow D \}$
       \end{enumerate}
     \item[(4)] Para cada una de las siguientes relaciones con su respectivo
     conjunto de dependencias funcionales:
@@ -281,6 +283,25 @@
     U(A,B,C,E) con $Ab \rightarrow CE$ Llave AB que es la llave de R normalizado
 
     V(A,B) con $A \twoheadrightarrow B$ Trivial Normalizado.
+    \item[(7)] Se tiene la siguiente relación:
+    $$R(idEnfermo,idCirujano,fechaCirugía,nombreEnfermo,direcciónEnfermo,
+    nombreCirujano,nombreCirugía,medicinaSuministrada,efectosSecundarios)$$
+    Digamos que: idEnfermo
+    \begin{enumerate}
+      \item Expresa las siguientes restricciones en forma de dependencias
+      funcionales: A un enfermo sólo se le da una medicina suministrada. Sólo
+      puede existir un efecto secundario por medicamento.
+      \begin{align*}
+        idEnfermo &\rightarrow nombreEnfermo & idEnfermo &\rightarrow direcciónEnfermo
+        idEnfermo &\rightarrow medicinaSuministrada
+        idCirujano &\rightarrow nombreCirujano &
+      \end{align*}
+      \item Especifica otras dependencias funcionales o multivaluadas que deban
+      satisfacerse en la relación R. Por cada una que definas, deberá aparecer
+      un enunciado en español como en el inciso anterior.
+      \item Normaliza utilizando el conjunto de dependencias establecido en los
+      puntos anteriores.
+    \end{enumerate}
   \end{enumerate}
 
 \end{document}
