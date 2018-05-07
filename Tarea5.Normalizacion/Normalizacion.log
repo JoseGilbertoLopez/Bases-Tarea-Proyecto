@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.6)  6 MAY 2018 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.6)  6 MAY 2018 23:35
 entering extended mode
 **./Normalizacion.tex
 (Normalizacion.tex
@@ -383,7 +383,10 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-)) (Normalizacion.aux)
+)) (Normalizacion.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
 \openout1 = `Normalizacion.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -410,21 +413,111 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 17.
- [1
 
-{C:/Users/Naranjo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Normaliz
-acion.aux
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 40.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 43.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 56.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+Overfull \hbox (152.14125pt too wide) in paragraph at lines 29--63
+\OML/cmm/m/it/10 Esevidenteenestecasoquenoexistevariablessuperfluosdelladoizqui
+erdo; sololadependenciafuncionalAB \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (110.14984pt too wide) in paragraph at lines 29--63
+\OML/cmm/m/it/10 Fyatieneelminimoconjuntodedependenciasfuncionalesalterminardev
+erlossuperfluosizquierdos$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--63
+
+ []
+
+[1
+
+{C:/Users/Naranjo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 82.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 87.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 90.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 95.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+LaTeX Warning: Command \textquestiondown invalid in math mode on input line 98.
+
+
+Missing character: There is no ¾ in font cmr10!
+
+Overfull \hbox (3.39108pt too wide) in paragraph at lines 67--118
+\T1/cmr/m/n/10 Se ha de-ci-di-do di-vi-dir R en las si-guien-tes re-la-cio-nes 
+S(A,B,C,D,F) y T(C,E),
+ []
+
+
+Overfull \hbox (41.59158pt too wide) in paragraph at lines 67--118
+\OML/cmm/m/it/10 Fyateniaelconjuntodedependenciasfuncionalesalterminarlossuperf
+luoizquierdo$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--118
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 118--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--139
+
+ []
+
+[3] [4] (Normalizacion.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 1648 strings out of 493305
- 19267 string characters out of 3128933
- 82386 words of memory out of 3000000
- 5234 multiletter control sequences out of 15000+200000
+ 1654 strings out of 493305
+ 19428 string characters out of 3128933
+ 88386 words of memory out of 3000000
+ 5240 multiletter control sequences out of 15000+200000
  8671 words of font info for 26 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,30p,171b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,30p,280b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecrm1000.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
 ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk
@@ -432,10 +525,11 @@ ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Naranjo/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/N
 aranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb>
-Output written on Normalizacion.pdf (1 page, 62933 bytes).
+pfb><C:/Users/Naranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb>
+Output written on Normalizacion.pdf (4 pages, 92505 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
