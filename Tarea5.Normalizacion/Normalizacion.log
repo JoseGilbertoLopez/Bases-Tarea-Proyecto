@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.6)  7 MAY 2018 06:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.6)  7 MAY 2018 07:52
 entering extended mode
 **./Normalizacion.tex
 (Normalizacion.tex
@@ -493,86 +493,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Naranjo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 104
-.
-
-Missing character: There is no ¾ in font cmr10!
-
-Overfull \hbox (110.14984pt too wide) in paragraph at lines 89--111
-\OML/cmm/m/it/10 Fyatieneelminimoconjuntodedependenciasfuncionalesalterminardev
-erlossuperfluosizquierdos$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--111
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 [2]
-Overfull \hbox (3.39108pt too wide) in paragraph at lines 115--127
+Overfull \hbox (3.39108pt too wide) in paragraph at lines 163--168
 \T1/cmr/m/n/10 Se ha de-ci-di-do di-vi-dir R en las si-guien-tes re-la-cio-nes 
 S(A,B,C,D,F) y T(C,E),
  []
 
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 137
-.
-
-Missing character: There is no ¾ in font cmr10!
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 140
-.
-
-Missing character: There is no ¾ in font cmr10!
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 145
-.
-
-Missing character: There is no ¾ in font cmr10!
-
-LaTeX Warning: Command \textquestiondown invalid in math mode on input line 148
-.
-
-Missing character: There is no ¾ in font cmr10!
-
-Overfull \hbox (41.59158pt too wide) in paragraph at lines 130--168
-\OML/cmm/m/it/10 Fyateniaelconjuntodedependenciasfuncionalesalterminarlossuperf
-luoizquierdo$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 130--168
-
- []
-
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 168--189
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--189
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-[4] [5] (Normalizacion.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 269--274
+
+ []
+
+[5] [6] (Normalizacion.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2555 strings out of 493305
- 29993 string characters out of 3128933
- 95375 words of memory out of 3000000
- 6104 multiletter control sequences out of 15000+200000
+ 2553 strings out of 493305
+ 29963 string characters out of 3128933
+ 94375 words of memory out of 3000000
+ 6102 multiletter control sequences out of 15000+200000
  12279 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,30p,285b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,30p,231b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ecrm1000.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
 ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk
@@ -583,9 +545,9 @@ aranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Users/Naranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmsy7.pfb><C:/Users/Naranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb>
-Output written on Normalizacion.pdf (5 pages, 102846 bytes).
+Output written on Normalizacion.pdf (6 pages, 101150 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
+ 176 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

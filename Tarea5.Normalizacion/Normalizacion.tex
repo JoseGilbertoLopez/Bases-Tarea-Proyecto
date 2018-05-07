@@ -67,125 +67,220 @@
       asociadas.
 
       \item[(C)] Si $A \twoheadrightarrow C$, entonces $A \rightarrow C$
+
       No necesariamente porque a un atributo en a $A$ se le puede asociar mas de
       un valor de $C$.
 
     \end{enumerate}
-    \item[(4)] Para cada una de las siguientes relaciones con su respectivo conjunto de dependencias funcionales:\\
-    $a. R(A,B,C,D,E,F)$ con $F = \{B\rightarrow D, B \rightarrow E, D \rightarrow F, AB \rightarrow C\}\\$
-    $b. R(A,B,C,D,E)$ con $F = \{A \rightarrow BC, B \rightarrow D, CD \rightarrow E, E \rightarrow A\}\\$
-    Indica todas las violaciones a la $3NF$\\
-    Normaliza de acuerdo a la $3N$
-    $A.  R(A,B,C,D,E,F)$ con $F = \{B \rightarrow D, B \rightarrow E, D \rightarrow F, AB \rightarrow C\}$\\
-    $F=\{B \rightarrow DE, D \rightarrow F, AB \rightarrow C\}$\\
-    Superfluo Izquierdos:\\
-    Es evidente en este caso que no existe variables superfluos del lado izquierdo, solo la dependencia funcional $AB \rightarrow C$  cumple tener mas de dos variables del lado izquierdo y B solo llega a D y E entonces no hay forma posible de llegar a C sin A.\\
+    \item[(3)] Para cada uno de los esuemas que se muestran a continuación:
+      \begin{enumerate}
+        \item[(a)] $R(A,B,C,D,E)$ con $F=\{ AB \rightarrow CD, E \rightarrow C
+        ,D \rightarrow B \}$
+      \end{enumerate}
+    \item[(4)] Para cada una de las siguientes relaciones con su respectivo
+    conjunto de dependencias funcionales:
+      \begin{enumerate}
+        \item[(a)] $R(A,B,C,D,E,F)$ con $F = \{B\rightarrow D, B \rightarrow E,
+        D \rightarrow F, AB \rightarrow C\}$
+
+        \item[(b)] $ R(A,B,C,D,E)$ con $F = \{A \rightarrow BC, B \rightarrow D,
+        CD \rightarrow E, E \rightarrow A\}$
+
+      \end{enumerate}
+
+    Indica todas las violaciones a la $3NF$
+
+    Normaliza de acuerdo a la $3NF$
+
+    \begin{enumerate}
+      \item[(a)] $R(A,B,C,D,E,F)$ con $F = \{B \rightarrow D, B \rightarrow E,
+      D \rightarrow F, AB \rightarrow C\}$
+
+      $$F=\{B \rightarrow DE, D \rightarrow F, AB \rightarrow C\}$$
+
+
+      Superfluo Izquierdos:
+
+      Es evidente en este caso que no existe variables superfluos del lado
+      izquierdo, solo la dependencia funcional $AB \rightarrow C$  cumple tener
+      mas de dos variables del lado izquierdo y B solo llega a D y E entonces no hay forma posible de llegar a C sin A.\\
+
+
+      Superfluo Derecho:
+
+      $B \rightarrow DE$
+
+      ¿D superfluo?
+      $$F'\{B \rightarrow E, D \rightarrow F, AB \rightarrow C\}$$
+      $$\{B\}+=\{B,E\}$$
+      $\therefore $ D no es superfluo.
+
+
+      ¿E es superfluo?
+      $$F'\{B \rightarrow D, D \rightarrow F, AB \rightarrow C\}$$
+      $$\{B\}+=\{B,D,F\}$$
+      $\therefore$ E no es superfluo
+
+      F tenia desde el principio el mínimo conjunto de dependencias funcionales.
+
+      \item[(b)] $R(A,B,C,D,E)$ con $F = \{A \rightarrow BC, B \rightarrow D,
+      CD \rightarrow E, E \rightarrow A\}$
+
+      Superfluo Izquierdo:
+      $$CD \rightarrow E$$
+      $\therefore$ C superfluo.
+      $$D \rightarrow E$$
+      $$\{D\}+=\{D,E,A,B,C\}$$
+      $\therefore$ C es superfluo.
+      $$F=\{A \rightarrow BC, B\rightarrow D, D\rightarrow E, E \rightarrow A\}$$
+
+      Superfluo Derecho:
+
+      $A\rightarrow BC$
+
+      ¿B superfluo?
+
+      $F'=\{A \rightarrow C, B \rightarrow D, D\rightarrow E, E\rightarrow A\}$
+
+      $\{A\}+=\{A,C\}$
+
+      $\therefore$ B no es superfluo, C superfluo.
+
+      $F'=\{A \rightarrow B, B \rightarrow D, D\rightarrow E, E \rightarrow A\}$
+
+      $\{A\}+=\{A,B,D,E\}$
+      $\therefore$ C no es superfluo
+
+      F ya tiene el mínimo conjunto de dependencias funcionales al terminar de
+      ver los superfluos izquierdos.
+    \end{enumerate}
+
+    \item[(5)] Sea el esquema:
+
+    $R(A,B,C,D,E,F)$ con $F=\{BD \rightarrow E, CD \rightarrow A, E \rightarrow C, B \rightarrow D\}$\\
+    ¿Qué puedes decir de $\{A\}+$ y $\{F\}+$?
+
+    Calcula \{B\}+, ¿qué puedes decir de esta cerradura?\\
+    Obtén todas las llaves candidatas.\\
+    ¿R cumple con BCNF? ¿Cumple con 3NF? (en caso contrario normaliza)\\
+    Se ha decidido dividir R en las siguientes relaciones S(A,B,C,D,F) y T(C,E), ¿se puede recuperar la
+    información de R?
+    $$\{A\}+=\{A\}$$
+    $$\{F\}+=\{\}$$
+    $$\{B\}+=\{B,D,E,C,A\}$$
+    Llave candidata: B
+
+    3ra Forma Normal
+
+    Superfluo Izquierdo:
+    $$BD \rightarrow E$$
+    ¿B superfluo?
+    $$D\rightarrow E$$
+    $$\{D\}+=\{D,E,C,A\}$$
+    $\therefore$ B no es superfluo
+    ¿D superfluo?
+    $$B\rightarrow E$$
+    $$\{B\}+=\{B,D,E,C,A\}$$
+    $\therefore$ D es superfluo
+
+    $F=\{B \rightarrow E, CD \rightarrow A, E \rightarrow C, B\rightarrow D\}$\\
+    $F=\{B \rightarrow DE, CD \rightarrow A, E \rightarrow C\}$\\
+
+    ¿C superfluo?
+
+    $$D\rightarrow A$$
+    $\{D\}+=\{D,A\}$
+    $\therefore$ C no es superfluo
+
+    ¿D superfluo?
+
+    $C \rightarrow A$
+    $$\{C\}+=\{C,A\}$$
+    $\therefore$ D no es superfluo
+
     Superfluo Derecho:
 
     $B \rightarrow DE$
 
     ¿D superfluo?
 
-    $F'\{B \rightarrow E, D \rightarrow F, AB \rightarrow C\}$\\
-    $\{B\}+=\{B,E\} \quad D no es superfluo.$\\
-    ¿E es superfluo?\\
-    $F'\{B \rightarrow D, D \rightarrow F, AB \rightarrow C\}$\\
-    $\{B\}+=\{B,D,F\} \quad E no es superfluo$\\
-    $F tenia desde el principio el minimo conjunto de dependencias funcionales$\\
-    $B. R(A,B,C,D,E) con F = \{A \rightarrow BC, B \rightarrow D, CD \rightarrow E, E \rightarrow A\}$\\
-    Superfluo Izquierdo:\\
-    $CD \rightarrow E$ \\
-    $C superfluo$\\
-    $D \rightarrow E$\\
-    $\{D\}+=\{D,E,A,B,C\} \quad C es superfluo$\\
-    $F=\{A \rightarrow BC, B\rightarrow D, D\rightarrow E, E \rightarrow A\}$ \\
-    Superfluo Derecho:\\
-    $A\rightarrow BC$\\
-    $¿B superfluo?$\\
-    $F'=\{A \rightarrow C, B \rightarrow D, D\rightarrow E, E\rightarrow A\}$\\
-    $\{A\}+=\{A,C\} \quad B no es superfluo$\\
-    $C superfluo$\\
-    $F'=\{A \rightarrow B, B \rightarrow D, D\rightarrow E, E \rightarrow A\}$\\
-    $\{A\}+=\{A,B,D,E\} \quad C no es superfluo$\\
-    $F ya tiene el minimo conjunto de dependencias funcionales al terminar de ver los superfluos izquierdos$\\
-    \item[(5)] Sea el esquema:\\
-    $R(A,B,C,D,E,F) con F=\{BD \rightarrow E, CD \rightarrow A, E \rightarrow C, B \rightarrow D\}$\\
-    ¿Qué puedes decir de $\{A\}+ y \{F\}+$?
-
-    Calcula \{B\}+, ¿qué puedes decir de esta cerradura?\\
-    Obtén todas las llaves candidatas.\\
-    ¿R cumple con BCNF? ¿Cumple con 3NF? (en caso contrario normaliza)\\
-    Se ha decidido dividir R en las siguientes relaciones S(A,B,C,D,F) y T(C,E), ¿se puede recuperar la
-    información de R?\\
-    $\{A\}+=\{A\}$\\
-    $\{F\}+=\{\}$\\
-    $\{B\}+=\{B,D,E,C,A\}$\\
-    Llave candidata: B\\
-    3ra Forma Normal\\
-    Superfluo Izquierdo\\
-    $BD \rightarrow E$
-
-    ¿B superfluo?
-
-    $D\rightarrow E$\\
-    $\{D\}+=\{D,E,C,A\} \quad B no es superfluo$\\
-    ¿D superfluo?\\
-    $B\rightarrow E$\\
-    $\{B\}+=\{B,D,E,C,A\} \quad D es superfluo$\\
-    $F=\{B \rightarrow E, CD \rightarrow A, E \rightarrow C, B\rightarrow D\}$\\
-    $F=\{B \rightarrow DE, CD \rightarrow A, E \rightarrow C\}$\\
-    $¿C superfluo?$\\
-    $D\rightarrow A$\\
-    $\{D\}+=\{D,A\} C no es superfluo$\\
-    $¿D superfluo?$\\
-    $C \rightarrow A$\\
-    $\{C\}+=\{C,A\} \quad D no es superfluo$\\
-    $Superfluo Derecho:$\\
-    $B \rightarrow DE$\\
-    $¿D superfluo?$\\
     $F'=\{B \rightarrow E, CD \rightarrow A, E\rightarrow C\}$\\
-    $\{B\}+=\{B,E,C\} \quad D no es superfluo$\\
-    $¿E superfluo?$\\
+    $$\{B\}+=\{B,E,C\}$$
+    $\therefore$ D no es superfluo
+
+    ¿E superfluo?
+
     $F'=\{B \rightarrow D, CD \rightarrow A, E \rightarrow C\}$\\
-    $\{B\}+=\{B,D\} \quad E no es superfluo$\\
-    $F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo$\\
-    $La llave de R es: B$\\
-    $Dividimos en particiones$\\
-    S(B,D,E) $con B \rightarrow DE$\\
-    T(C,D,A) $con CD \rightarrow A$\\
-    U(E,C) $con E \rightarrow C$\\
-    La llave de R esta contenido en S entonces ya esta normalizado\\
-    $4ta Forma Normal$\\
-    $Llave R: B$\\
-    $B\rightarrow DE$ \\$Esta dependencia cumpla con la regla de normalizacion$\\
-    $las demas dependencias son violaciones a la 4ta forma normal$\\
-    S(E,C) con $E \rightarrow C$, $una llave para S es E normalizado$\\
-    T(E,C,D,A)$ Llave de T = ECD es violacion$\\
-    Sea:\\
-    U(C,D,A) Llave de U = CD y la dependencia es $CD \rightarrow A$ normalizado\\
-    V(C) $C\rightarrow C \quad es trivial ya esta normalizado$\\
-    \\
-    \item[(6)]Para cada uno de los esquemas, con su respectivo conjunto de dependencias multivaluadas,
-    resuelve los siguientes puntos:\\
-    a. R(A,B,C,D) con DMV = $ \{ AB \rightarrow \rightarrow C, B \rightarrow D \} $\\
-    b. R(A,B,C,D,E) con DMV = $\{ A \rightarrow \rightarrow B, AB \rightarrow C, A \rightarrow D, AB \rightarrow E\}$\\
-    $Encuentra todas las violaciones a la 4NF$\\
-    $Normaliza de acuerdo a la 4NF$\\
+    $$\{B\}+=\{B,D\}$$
+    $\therefore$ E no es superfluo.
+    F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo
+
+    La llave de R es: B
+
+    Dividimos en particiones
+
+    S(B,D,E) $con B \rightarrow DE$
+
+    T(C,D,A) $con CD \rightarrow A$
+
+    U(E,C) $con E \rightarrow C$
+
+    La llave de R esta contenido en S entonces ya esta normalizado
+
+    4ta Forma Normal
+
+    Llave $R: B$
+
+    $B\rightarrow DE$
+
+    Esta dependencia cumpla con la regla de normalizacio
+
+    las demas dependencias son violaciones a la 4ta forma normal
+
+    S(E,C) con $E \rightarrow C$, una llave para S es E normalizado
+
+    T(E,C,D,A) Llave de T = ECD es violacion.
+
+    Sea:
+
+    U(C,D,A) Llave de U = CD y la dependencia es $CD \rightarrow A$ normalizado
+
+    V(C) $C\rightarrow C$ es trivial ya esta normalizado
+
+    \item[(6)] Para cada uno de los esquemas, con su respectivo conjunto de dependencias multivaluadas,
+    resuelve los siguientes puntos:
+    \begin{enumerate}
+      \item[(a)] R(A,B,C,D) con DMV = $ \{ AB \twoheadrightarrow C, B
+      \rightarrow D \} $
+      \item[(b)] R(A,B,C,D,E) con DMV = $\{ A \twoheadrightarrow B, AB
+      \rightarrow C, A \rightarrow D, AB \rightarrow E\}$
+    \end{enumerate}
+    Encuentra todas las violaciones a la $4NF$
+
+    Normaliza de acuerdo a la $4NF$
+
     a. Llave para R: AB
-    $AB\rightarrow\rightarrow C$\\
-    $B\rightarrow D \quad violacion$\\
-    S(B,D) con $B \rightarrow D \quad Llave B para S normalizado$\\
-    T(B,A,C) con $AB\rightarrow\rightarrow C$\\
-    Con $DMV=\{AB\rightarrow\rightarrow C\} $ La llave es AB que es la llave de R esta normalizado\\
+    $AB\twoheadrightarrow C$
+
+    $B\rightarrow D \quad violacion$
+
+    S(B,D) con $B \rightarrow D$ Llave B para S normalizado
+
+    T(B,A,C) con $AB\twoheadrightarrow C$\\
+    Con $DMV= \{ AB \twoheadrightarrow C\} $ La llave es AB que es la llave de R esta normalizado\\
     \\
     $b. Llave para R: AB$\\
-    $DMV= \{A \rightarrow\rightarrow B, AB\rightarrow CE,  A\rightarrow D \}$\\
-    $AB \rightarrow CE \quad Ya esta normalizado$\\
-    $A \rightarrow D \quad violacion$\\
-    S(A,D)$ con A\rightarrow D$ La llave de S es A normalizado\\
-    T(A,C,E,B) con $DMV\{A\rightarrow\rightarrow B\} \quad La llave es AB$\\
-    U(A,B,C,E) con $Ab \rightarrow CE Llave AB que es la llave de R normalizado$\\
-    V(A,B) con $A\rightarrow\rightarrow B Trivial Normalizado$\\
+    $DMV= \{A \twoheadrightarrow B, AB\rightarrow CE,  A\rightarrow D \}$
+
+    $AB \rightarrow CE$ Ya esta normalizado
+    $A \rightarrow D$ violacion
+    S(A,D)$ con A\rightarrow D$ La llave de S es A normalizado
+
+    T(A,C,E,B) con $DMV \{ A \twoheadrightarrow B\}$ La llave es AB.
+
+    U(A,B,C,E) con $Ab \rightarrow CE$ Llave AB que es la llave de R normalizado
+
+    V(A,B) con $A \twoheadrightarrow B$ Trivial Normalizado.
   \end{enumerate}
 
 \end{document}
