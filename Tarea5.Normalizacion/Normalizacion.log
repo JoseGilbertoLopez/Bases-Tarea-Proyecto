@@ -1,12 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.4.16)  7 MAY 2018 21:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.6)  7 MAY 2018 23:33
 entering extended mode
 **./Normalizacion.tex
 (Normalizacion.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-(C:\MikTeX\tex\latex\base\article.cls
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
+"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(C:\MikTeX\tex\latex\base\size10.clo
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -20,24 +21,26 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (C:\MikTeX\tex\latex\base\fontenc.sty
+)
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty
+"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(C:\MikTeX\tex\latex\base\t1enc.def
+ ("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)) (C:\MikTeX\tex\latex\base\inputenc.sty
+))
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
+y"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-(C:\MikTeX\tex\latex\base\utf8.def
+ ("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (C:\MikTeX\tex\latex\base\t1enc.dfu
+ ("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -278,7 +281,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(C:\MikTeX\tex\latex\base\ot1enc.dfu
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -318,7 +321,8 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- (C:\MikTeX\tex\latex\base\omsenc.dfu
+ ("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu
+"
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -342,27 +346,35 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(C:\MikTeX\tex\generic\babel\babel.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.st
+y"
 Package: babel 2018/02/14 3.18 The Babel package
- (C:\MikTeX\tex\generic\babel\switch.def
+
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\switch.d
+ef"
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\MikTeX\tex\latex\arabi\bblopts.cfg
+
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cf
+g"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\MikTeX\tex\latex\babel-spanish\spanish.ldf
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-spanish\sp
+anish.ldf"
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
-(C:\MikTeX\tex\generic\babel\babel.def
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.de
+f"
 File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 
-(C:\MikTeX\tex\generic\babel\txtbabel.def)
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\txtbabel
+.def")
 \bbl@dirlevel=\count88
 )
 \es@quottoks=\toks16
@@ -372,24 +384,30 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-(C:\MikTeX\tex\latex\amsmath\amsmath.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.
+sty"
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(C:\MikTeX\tex\latex\amsmath\amstext.sty
+
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.
+sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\MikTeX\tex\latex\amsmath\amsgen.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.s
+ty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen104
 ))
-(C:\MikTeX\tex\latex\amsmath\amsbsy.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.s
+ty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen105
 )
-(C:\MikTeX\tex\latex\amsmath\amsopn.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.s
+ty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count90
@@ -430,10 +448,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-(C:\MikTeX\tex\latex\amsfonts\amssymb.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb
+.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\MikTeX\tex\latex\amsfonts\amsfonts.sty
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfont
+s.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -445,153 +465,152 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `Normalizacion.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
-LaTeX Font Info:    Try loading font information for U+msa on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
 
-(C:\MikTeX\tex\latex\amsfonts\umsa.fd
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd
+"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 13.
- (C:\MikTeX\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-[1
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 
-{C:/Users/Jose G/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 79--101
+("C:\Users\Naranjo\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{C:/Users/Naranjo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 126--129
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-[3]
-Overfull \hbox (3.39108pt too wide) in paragraph at lines 184--189
+Overfull \hbox (3.39108pt too wide) in paragraph at lines 185--190
 \T1/cmr/m/n/10 Se ha de-ci-di-do di-vi-dir R en las si-guien-tes re-la-cio-nes 
 S(A,B,C,D,F) y T(C,E),
  []
 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--238
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--240
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
 
 [5]
 
-LaTeX Warning: Command \' invalid in math mode on input line 293.
+LaTeX Warning: Command \' invalid in math mode on input line 298.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 293.
-
-Missing character: There is no í in font cmr10!
-Missing character: There is no ó in font cmr10!
-
-LaTeX Warning: Command \' invalid in math mode on input line 293.
-
-Missing character: There is no í in font cmr10!
-
-LaTeX Warning: Command \' invalid in math mode on input line 293.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 293.
+LaTeX Warning: Command \' invalid in math mode on input line 298.
 
 Missing character: There is no í in font cmr10!
 Missing character: There is no ó in font cmr10!
 
-Overfull \hbox (38.88449pt too wide) detected at line 293
+LaTeX Warning: Command \' invalid in math mode on input line 298.
+
+Missing character: There is no í in font cmr10!
+
+LaTeX Warning: Command \' invalid in math mode on input line 298.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 298.
+
+Missing character: There is no í in font cmr10!
+Missing character: There is no ó in font cmr10!
+
+Overfull \hbox (38.88449pt too wide) detected at line 298
  []$[]  \OML/cmm/m/it/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 idEnfermo; idCiruja
 no; fechaCiruga; nombreEnfermo; direccinEnfermo;$ 
  []
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 293.
+LaTeX Warning: Command \' invalid in math mode on input line 298.
 
 Missing character: There is no í in font cmr10!
 
-Overfull \hbox (41.39444pt too wide) detected at line 293
+Overfull \hbox (41.39444pt too wide) detected at line 298
  []$[]\OML/cmm/m/it/10 nombreCirujano; nombreCiruga; medicinaSuministrada; efec
 tosSecundarios\OT1/cmr/m/n/10 )  $ 
  []
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 301.
+LaTeX Warning: Command \' invalid in math mode on input line 306.
 
 Missing character: There is no í in font cmr10!
 
-LaTeX Warning: Command \' invalid in math mode on input line 301.
+LaTeX Warning: Command \' invalid in math mode on input line 306.
 
 Missing character: There is no í in font cmr10!
 
-LaTeX Warning: Command \' invalid in math mode on input line 301.
+LaTeX Warning: Command \' invalid in math mode on input line 306.
 
 Missing character: There is no í in font cmr10!
 
-LaTeX Warning: Command \' invalid in math mode on input line 301.
+LaTeX Warning: Command \' invalid in math mode on input line 306.
 
 Missing character: There is no í in font cmr10!
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 329--341
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--346
 
  []
 
-[7] (Normalizacion.aux
+[6] [7] (Normalizacion.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2555 strings out of 493305
- 27883 string characters out of 3146673
- 95375 words of memory out of 3000000
- 6103 multiletter control sequences out of 15000+200000
- 12965 words of font info for 44 fonts, out of 3000000 for 9000
+ 2523 strings out of 493305
+ 29631 string characters out of 3128933
+ 97375 words of memory out of 3000000
+ 6081 multiletter control sequences out of 15000+200000
+ 7552 words of font info for 25 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,30p,231b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Jose G\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
-0\ecti1000.pk> <C:\Users\Jose G\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\ecrm1000.pk> <C:\Users\Jose G\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Jose G\AppData\Local\MiKTeX\2.9\
-fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/MikTeX/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Mi
-kTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb><C:/MikTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Normalizacion.pdf (7 pages, 108175 bytes).
+ 27i,8n,30p,246b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecti1000.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm1200.pk> <C:\Users\Naranjo\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecrm1000.pk><C:/Users/Naranjo/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Naranjo/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/N
+aranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb><C:/Users/Naranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy7.pfb><C:/Users/Naranjo/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/symbols/msam10.pfb>
+Output written on Normalizacion.pdf (7 pages, 98293 bytes).
 PDF statistics:
- 187 PDF objects out of 1000 (max. 8388607)
+ 157 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

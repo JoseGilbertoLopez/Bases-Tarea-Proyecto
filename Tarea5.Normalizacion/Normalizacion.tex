@@ -3,14 +3,19 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage{amsmath}
-\usepackage{amssymb}
-
-\title{(Tarea 5:) Dependencias y Normalización}
-\author{Naranjo Robledo Carlos \\ Lopéz García José Gilberto}
+\usepackage{amsmath} % entornos matematicos
+\usepackage{amssymb} % doble flecha
 
 \begin{document}
-  \maketitle{Tarea 5}
+  \begin{flushright}
+    \begin{tabular}{r r}
+        Naranjo Robledo Carlos & 313158412 \\
+        Lopez Garcia Jose Gilberto & 313055552
+    \end{tabular}
+  \end{flushright}
+  \begin{center}
+    \large{(Tarea 5:) Dependencias y Normalización}
+  \end{center}
   \begin{enumerate}
     \item[(1)] Preguntas de repaso.
     \begin{enumerate}
@@ -113,12 +118,9 @@
     Normaliza de acuerdo a la $3NF$
 
     \begin{enumerate}
-      \item[(a)] $R(A,B,C,D,E,F)$ con $F = \{B \rightarrow D, B \rightarrow E,
+      \item[(a)] $R(A,B,C,D,E,F)$ con $F = \{ B \rightarrow D, B \rightarrow E,
       D \rightarrow F, AB \rightarrow C\}$
-
-      $$F=\{B \rightarrow DE, D \rightarrow F, AB \rightarrow C\}$$
-
-
+      $$F= \{ B \rightarrow DE, D \rightarrow F, AB \rightarrow C\}$$
       Superfluo Izquierdos:
 
       Es evidente en este caso que no existe variables superfluos del lado
