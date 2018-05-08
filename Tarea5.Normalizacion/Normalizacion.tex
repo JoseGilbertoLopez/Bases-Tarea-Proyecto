@@ -79,6 +79,25 @@
         \item[(b)] $R(A,B,C,D,E)$ con $F= \{ AB \rightarrow C, DE \rightarrow C,
         B \rightarrow D \}$
       \end{enumerate}
+
+        \item[(a)] Dos posibles DF no triviales son: $AB \Rightarrow CD$ y
+        $E \Rightarrow C$
+        Llave candidata para R: ABE
+        Todas las dependencias funcionales son violacion .
+        S(A,B,C,D) con $AB \rightarrow CD$ y $D \rightarrow$ una llave para S es
+        AB entonces hay violacion en $D \rightarrow B$
+        T(A,E) con $AE \rightarrow AE$$therefore$ No hay violacion es trivial.
+         U(D,B) con $D \rightarrow B$ Una llave para S es D entonces no hay
+         violacion.
+         V(D,A,C) con $ACD \rightarrow ACD$ es trivial entonces no hay violacion.
+
+        \item[(b)] Dos dependencias no triviales son: $AB \rightarrow C$ y
+        $DE \rightarrow C$
+        Llave candidata para R: ABE
+        Todas las dependencias on violaciones.
+        S(A,B,C) con $AB \rightarrow C$ una llave para S es AB no hay violacion
+        T(A,D,E) con $ADE \rightarrow ADE$ es trivial no hay violacion.
+        Se pierde las dependencias funcionales $DE \rightarrow C$ y $B \rightarrow D$
     \item[(4)] Para cada una de las siguientes relaciones con su respectivo
     conjunto de dependencias funcionales:
       \begin{enumerate}
@@ -216,7 +235,7 @@
     $$\{ B\}+=\{ B,D\}$$
     $\therefore$ E no es superfluo.
     F ya tenia el conjunto de dependencias funcionales al terminar los superfluo izquierdo\\
-    
+
      $F=\{B \rightarrow DE, CD \rightarrow A, E \rightarrow C\}$\\
 
     La llave de R es: B
@@ -261,7 +280,7 @@
     S(A,B,C)$ con AB\rightarrow C$ La llave de S es AB no hay violacion normalizado
 
     T(A,D,E) con $A\Rightarrow D$ llave es Violacion
-    
+
     U(A,D) con $A \Rightarrow D$ La llave es A no hay violacion
     V(A,E) con $AE \Rightarrow AE$ trivial normalizado.
 
