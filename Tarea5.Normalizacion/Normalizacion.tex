@@ -306,6 +306,19 @@
 
       \item Normaliza utilizando el conjunto de dependencias establecido en los
       puntos anteriores.
+      
+      R(IDE,IDC,NE,NC,DE,M,FC,E)\\
+      $F=\{IDE \rightarrow M, M \rightarrow E, IDE \rightarrow NE , IDE \rightarrow DE, IDC \rightarrow NC ,NF \rightarrow FC , FC \twoheadrightarrow NC, E \twoheadrightarrow M\}$\\
+      $F=\{IDE \rightarrow MNEDE, M \rightarrow E, IDC \rightarrow NC, NC \rightarrow FC, FC \twoheadrightarrow NC, E \twoheadrightarrow M\}$\\
+      Una llave para R: IDE,IDC,N,CM.\\
+      Todo es violacion\\
+      S(IDE,M,NE,DE) con $IDE \rightarrow MNEDE$ llave para S IDE no hay violacion.\\
+      T(IDE,NC,IDC,FC,E) con $IDC \rightarrow NC, NC\rightarrow FC$ con
+      $DMV=\{FC \twoheadrightarrow NC\}$ una llave para T es IDE,IDC,E hay violacion y tambien se perdio la dependencia multivaluada $E \twoheadrightarrow M$.\\
+      U(IDC,NC) con $IDC \rightarrow NC$ Llave para U IDC no hay violacion\\
+      V(IDC,IDE,FC,E) con $IDCIDEFC \rightarrow IDCIDEFC$ trivialno hay violacion\\
+      Se pierde las siguiente dependencias funcionales: \\
+      $M \rightarrow E, FC \twoheadrightarrow NC, E \twoheadrightarrow M$\\
     \end{enumerate}
   \end{enumerate}
 
