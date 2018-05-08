@@ -73,10 +73,11 @@
 
     \end{enumerate}
     \item[(3)] Para cada uno de los esuemas que se muestran a continuación:
-      \begin{enumerate}
+      
         \item[(a)] $R(A,B,C,D,E)$ con $F=\{ AB \rightarrow CD, E \rightarrow C
         ,D \rightarrow B \}$
         \item[(b)] $R(A,B,C,D,E)$ con $F= \{ AB \rightarrow C, DE \rightarrow C,
+<<<<<<< HEAD
         B \rightarrow D \}$
       \end{enumerate}
 
@@ -98,6 +99,29 @@
         S(A,B,C) con $AB \rightarrow C$ una llave para S es AB no hay violacion
         T(A,D,E) con $ADE \rightarrow ADE$ es trivial no hay violacion.
         Se pierde las dependencias funcionales $DE \rightarrow C$ y $B \rightarrow D$
+=======
+        B \rightarrow D \}$\\
+      	Especifica de ser posible dos DF no triviales que se pueden derivar de las dependencias funcionales dadas\\
+      	Indica alguna llave candidata para R\\
+      	Especifica todas las violaciones a la BCNF\\
+      	Normaliza de acuerdo a BCNF, asegúrate de indicar cuáles son las relaciones resultantes con sus respectivas dependencias funcionales:\\
+      	a.\\
+      Dos dependencias funcionales no triviales: $AB \rightarrow CD$ y con $E \rightarrow C$\\
+      	Una llave para R es: ABE\\
+      	Todo es violacion \\
+      	S(A,B,C,D) con $AB \rightarrow CD, D \rightarrow B$ una llave para S es AB hay violacion.\\
+      	T(A,E) con $AE \rightarrow AE$ trivial no hay violacion.\\
+      	U(D,B) con $D \rightarrow B$ una llave para U no hay violacion.\\
+      	V(D,A,C) con $ACD \rightarrow ACD$ trivial no hay violacion.\\
+      	\\
+      	b.\\
+      	Dos dependencias funcionales no triviales son: $AB \rightarrow C$ y $DE \rightarrow C$\\
+      	Una llave para R es : ABE\\
+      	Todo es violacion\\
+      	S(A,B,C) con $AB \rightarrow C$ una llave para S es AB no hay violacion.\\
+      	T(A,D,E) con $ADE \rightarrow ADE$ trivial no hay violacion.\\
+      	Se pierden las dependencias $DE \rightarrow C, B \rightarrow D$ 
+>>>>>>> 3f06d947c2f4ba1a6e9e55dbe69acde90d593499
     \item[(4)] Para cada una de las siguientes relaciones con su respectivo
     conjunto de dependencias funcionales:
       \begin{enumerate}
@@ -179,7 +203,7 @@
     \item[(5)] Sea el esquema:
 
     $R(A,B,C,D,E,F)$ con $F=\{BD \rightarrow E, CD \rightarrow A, E \rightarrow C, B \rightarrow D\}$\\
-    ¿Qué puedes decir de $\{A\}+$ y $\{F\}+$?
+    ¿Qué puedes decir de $\{A\}+ = \{A\}$ y $\{F\}+=\{F\}$?
 
     Calcula \{B\}+, ¿qué puedes decir de esta cerradura?\\
     Obtén todas las llaves candidatas.\\
@@ -325,6 +349,19 @@
 
       \item Normaliza utilizando el conjunto de dependencias establecido en los
       puntos anteriores.
+      
+      R(IDE,IDC,NE,NC,DE,M,FC,E)\\
+      $F=\{IDE \rightarrow M, M \rightarrow E, IDE \rightarrow NE , IDE \rightarrow DE, IDC \rightarrow NC ,NF \rightarrow FC , FC \twoheadrightarrow NC, E \twoheadrightarrow M\}$\\
+      $F=\{IDE \rightarrow MNEDE, M \rightarrow E, IDC \rightarrow NC, NC \rightarrow FC, FC \twoheadrightarrow NC, E \twoheadrightarrow M\}$\\
+      Una llave para R: IDE,IDC,N,CM.\\
+      Todo es violacion\\
+      S(IDE,M,NE,DE) con $IDE \rightarrow MNEDE$ llave para S IDE no hay violacion.\\
+      T(IDE,NC,IDC,FC,E) con $IDC \rightarrow NC, NC\rightarrow FC$ con
+      $DMV=\{FC \twoheadrightarrow NC\}$ una llave para T es IDE,IDC,E hay violacion y tambien se perdio la dependencia multivaluada $E \twoheadrightarrow M$.\\
+      U(IDC,NC) con $IDC \rightarrow NC$ Llave para U IDC no hay violacion\\
+      V(IDC,IDE,FC,E) con $IDCIDEFC \rightarrow IDCIDEFC$ trivialno hay violacion\\
+      Se pierde las siguiente dependencias funcionales: \\
+      $M \rightarrow E, FC \twoheadrightarrow NC, E \twoheadrightarrow M$\\
     \end{enumerate}
   \end{enumerate}
 
