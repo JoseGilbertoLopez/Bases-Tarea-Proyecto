@@ -1,0 +1,1822 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+\usepackage[spanish]{babel}
+% entornos matematicos
+% doble flecha
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\align right
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="none" valignment="top" special=" ">
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Naranjo Robledo Carlos 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+313158412 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lopez Garcia Jose Gilberto 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+313055552 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+(Tarea 5:) Dependencias y Normalización
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(1)
+\end_layout
+
+\end_inset
+
+Preguntas de repaso.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+¿Qué es una dependencia funcional y comó se define? Se trata de una relación
+ unididreccional entre 2 atributos de tal forma que en un momento dado,
+ para cada valor único de 
+\begin_inset Formula $A$
+\end_inset
+
+, sólo un valor de 
+\begin_inset Formula $B$
+\end_inset
+
+ se asocia con él através de la relación.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+¿Para qué sirve el concepto de dependencia en la normalización? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+Ayudan a especificar formalmente cuando un diseño es correcto.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Especifiar restricciones sobre el conjunto de relaciones.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Examinar las relaciones y determinar si son legales bajo un conjunto de
+ dependencias funcionales dado.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(c)
+\end_layout
+
+\end_inset
+
+Sea 
+\begin_inset Formula $A$
+\end_inset
+
+ la llave de 
+\begin_inset Formula $R(A,B,C)$
+\end_inset
+
+.
+ indica todas las dependencias funcionales que implica 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\begin{align*}
+A & \rightarrow A & A & \rightarrow B & A & \rightarrow C
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+A+=\{A,B,C\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(d)
+\end_layout
+
+\end_inset
+
+¿Qué es una forma normal? ¿Cuál es el objetivo de normalizar un modelo de
+ datos? 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+Tecnica desarrollada inicialmente por E.F.Codd en 1972, para diseñar la estructura
+ lógica de una BD en el modelo relacional.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Proceso por el cual su va comprobando el cumplimiento de una serie de reglas
+ (restricciones) por parte de un esquema de relación.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Cada regla que se cumple, aumenta el grado de normalización del esquma.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Cuando una regla no cumple, el esquema de relación se debe descomponer en
+ varios esquemas que sí la cumplan por separado.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(e)
+\end_layout
+
+\end_inset
+
+En qué casos es preferible lograr 3NF en vez de BCNF
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+Cuando se necesita recuperar la información una vez se hayan hecho las particion
+es.
+ Es decir cuando se quiere que no haya perdida de información en esquemas.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(2)
+\end_layout
+
+\end_inset
+
+Proporciona algunos ejemplos que demuestren que las siguientes reglas no
+ son válidas.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $A\rightarrow B$
+\end_inset
+
+, entonces 
+\begin_inset Formula $B\rightarrow A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+Tenemos que a cada valor de A se le asigna un unico valor de B, suponiendo
+ que A es una persona y B el nombre de la persona, sabemos que una persona
+ solo puede tener un nombre, pero si elegimos un nombre este puede estar
+ asociado a mas de una persona.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $AB\rightarrow C$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A\rightarrow C$
+\end_inset
+
+ y 
+\begin_inset Formula $B\rightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+En este caso recordemos que una dependencia funcional a cada atributo se
+ le asigna un valor unico, pensando en 
+\begin_inset Formula $A$
+\end_inset
+
+ commo los días y 
+\begin_inset Formula $B$
+\end_inset
+
+ como los meses podemos decir que estos 2 atributos determinan una fecha,
+ pero 
+\begin_inset Formula $A$
+\end_inset
+
+ no determina funcionalmente a 
+\begin_inset Formula $C$
+\end_inset
+
+ por que 
+\begin_inset Formula $A$
+\end_inset
+
+ puede tener varias fechas 
+\begin_inset Formula $C$
+\end_inset
+
+ asociadas.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(C)
+\end_layout
+
+\end_inset
+
+Si 
+\begin_inset Formula $A\twoheadrightarrow C$
+\end_inset
+
+, entonces 
+\begin_inset Formula $A\rightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+No necesariamente porque a un atributo en 
+\begin_inset Formula $A$
+\end_inset
+
+ se le puede asociar mas de un valor de 
+\begin_inset Formula $C$
+\end_inset
+
+, por ejemplo que una persona puede tener varios autos.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(3)
+\end_layout
+
+\end_inset
+
+Para cada uno de los esuemas que se muestran a continuación:
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{AB\rightarrow CD,E\rightarrow C,D\rightarrow B\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{AB\rightarrow C,DE\rightarrow C,B\rightarrow D\}$
+\end_inset
+
+ - Especifica de ser posible dos DF no triviales que se pueden derivar de
+ las dependencias funcionales dadas - Indica alguna llave candidata para
+ R - Especifica todas las violaciones a la BCNF - Normaliza de acuerdo a
+ BCNF, asegúrate de indicar cuáles son las relaciones resultantes con sus
+ respectivas dependencias funcionales: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+Dos dependencias funcionales no triviales: 
+\begin_inset Formula $AB\rightarrow CD$
+\end_inset
+
+ y con 
+\begin_inset Formula $E\rightarrow C$
+\end_inset
+
+ Una llave para R es: ABE Todo es violacion S(A,B,C,D) con 
+\begin_inset Formula $AB\rightarrow CD,D\rightarrow B$
+\end_inset
+
+ una llave para S es AB hay violacion.
+ T(A,E) con 
+\begin_inset Formula $AE\rightarrow AE$
+\end_inset
+
+ trivial no hay violacion.
+ U(D,B) con 
+\begin_inset Formula $D\rightarrow B$
+\end_inset
+
+ una llave para U no hay violacion.
+ V(D,A,C) con 
+\begin_inset Formula $ACD\rightarrow ACD$
+\end_inset
+
+ trivial no hay violacion.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+Dos dependencias funcionales no triviales son: 
+\begin_inset Formula $AB\rightarrow C$
+\end_inset
+
+ y 
+\begin_inset Formula $DE\rightarrow C$
+\end_inset
+
+ Una llave para R es : ABE Todo es violacion.
+ S(A,B,C) con 
+\begin_inset Formula $AB\rightarrow C$
+\end_inset
+
+ una llave para S es AB no hay violacion.
+ T(A,D,E) con 
+\begin_inset Formula $ADE\rightarrow ADE$
+\end_inset
+
+ trivial no hay violacion.
+ Se pierden las dependencias 
+\begin_inset Formula $DE\rightarrow C,B\rightarrow D$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(4)
+\end_layout
+
+\end_inset
+
+Para cada una de las siguientes relaciones con su respectivo conjunto de
+ dependencias funcionales: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E,F)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{B\rightarrow D,B\rightarrow E,D\rightarrow F,AB\rightarrow C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{A\rightarrow BC,B\rightarrow D,CD\rightarrow E,E\rightarrow A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Indica todas las violaciones a la 
+\begin_inset Formula $3NF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Normaliza de acuerdo a la 
+\begin_inset Formula $3NF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E,F)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{B\rightarrow D,B\rightarrow E,D\rightarrow F,AB\rightarrow C\}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+F=\{B\rightarrow DE,D\rightarrow F,AB\rightarrow C\}
+\]
+
+\end_inset
+
+Superfluo Izquierdos:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+Es evidente en este caso que no existe variables superfluos del lado izquierdo,
+ solo la dependencia funcional 
+\begin_inset Formula $AB\rightarrow C$
+\end_inset
+
+ cumple tener mas de dos variables del lado izquierdo y B solo llega a D
+ y E entonces no hay forma posible de llegar a C sin A.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Superfluo Derecho:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $B\rightarrow DE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿D superfluo? 
+\begin_inset Formula 
+\[
+F'\{B\rightarrow E,D\rightarrow F,AB\rightarrow C\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{B\}+=\{B,E\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ D no es superfluo.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿E es superfluo? 
+\begin_inset Formula 
+\[
+F'\{B\rightarrow D,D\rightarrow F,AB\rightarrow C\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{B\}+=\{B,D,F\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ E no es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+F tenia desde el principio el mínimo conjunto de dependencias funcionales.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $R(A,B,C,D,E)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{A\rightarrow BC,B\rightarrow D,CD\rightarrow E,E\rightarrow A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+Superfluo Izquierdo: 
+\begin_inset Formula 
+\[
+CD\rightarrow E
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ C superfluo.
+ 
+\begin_inset Formula 
+\[
+D\rightarrow E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{D\}+=\{D,E,A,B,C\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ C es superfluo.
+ 
+\begin_inset Formula 
+\[
+F=\{A\rightarrow BC,B\rightarrow D,D\rightarrow E,E\rightarrow A\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Superfluo Derecho:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $A\rightarrow BC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿B superfluo?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F'=\{A\rightarrow C,B\rightarrow D,D\rightarrow E,E\rightarrow A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $\{A\}+=\{A,C\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $\therefore$
+\end_inset
+
+ B no es superfluo, C superfluo.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F'=\{A\rightarrow B,B\rightarrow D,D\rightarrow E,E\rightarrow A\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $\{A\}+=\{A,B,D,E\}$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ C no es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+F ya tiene el mínimo conjunto de dependencias funcionales al terminar de
+ ver los superfluos izquierdos.
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(5)
+\end_layout
+
+\end_inset
+
+Sea el esquema:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $R(A,B,C,D,E,F)$
+\end_inset
+
+ con 
+\begin_inset Formula $F=\{BD\rightarrow E,CD\rightarrow A,E\rightarrow C,B\rightarrow D\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ ¿Qué puedes decir de 
+\begin_inset Formula $\{A\}+=\{A\}$
+\end_inset
+
+ y 
+\begin_inset Formula $\{F\}+=\{F\}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Calcula {B}+, ¿qué puedes decir de esta cerradura?
+\begin_inset Newline newline
+\end_inset
+
+ Obtén todas las llaves candidatas.
+\begin_inset Newline newline
+\end_inset
+
+ ¿R cumple con BCNF? ¿Cumple con 3NF? (en caso contrario normaliza)
+\begin_inset Newline newline
+\end_inset
+
+ Se ha decidido dividir R en las siguientes relaciones S(A,B,C,D,F) y T(C,E),
+ ¿se puede recuperar la información de R? 
+\begin_inset Formula 
+\[
+\{A\}+=\{A\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{F\}+=\{F\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{B\}+=\{B,D,E,C,A\}
+\]
+
+\end_inset
+
+Llave candidata: B
+\end_layout
+
+\begin_layout Standard
+
+\size large
+3ra Forma Normal
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Superfluo Izquierdo: 
+\begin_inset Formula 
+\[
+BD\rightarrow E
+\]
+
+\end_inset
+
+¿B superfluo? 
+\begin_inset Formula 
+\[
+D\rightarrow E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{D\}+=\{D,E,C,A\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ B no es superfluo ¿D superfluo? 
+\begin_inset Formula 
+\[
+B\rightarrow E
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\{B\}+=\{B,D,E,C,A\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ D es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F=\{B\rightarrow E,CD\rightarrow A,E\rightarrow C,B\rightarrow D\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $F=\{B\rightarrow DE,CD\rightarrow A,E\rightarrow C\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿C superfluo?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula 
+\[
+D\rightarrow A
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\{D\}+=\{D,A\}$
+\end_inset
+
+ 
+\begin_inset Formula $\therefore$
+\end_inset
+
+ C no es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿D superfluo?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $C\rightarrow A$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\{C\}+=\{C,A\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ D no es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Superfluo Derecho:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $B\rightarrow DE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿D superfluo?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F'=\{B\rightarrow E,CD\rightarrow A,E\rightarrow C\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\{B\}+=\{B,E,C\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ D no es superfluo
+\end_layout
+
+\begin_layout Standard
+
+\size large
+¿E superfluo?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F'=\{B\rightarrow D,CD\rightarrow A,E\rightarrow C\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\{B\}+=\{B,D\}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $\therefore$
+\end_inset
+
+ E no es superfluo.
+ F ya tenia el conjunto de dependencias funcionales al terminar los superfluo
+ izquierdo
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $F=\{B\rightarrow DE,CD\rightarrow A,E\rightarrow C\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+La llave de R es: B
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Dividimos en particiones
+\end_layout
+
+\begin_layout Standard
+
+\size large
+S(B,D,E) 
+\begin_inset Formula $conB\rightarrow DE$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+T(C,D,A) 
+\begin_inset Formula $conCD\rightarrow A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+U(E,C) 
+\begin_inset Formula $conE\rightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+La llave de R esta contenido en S entonces ya esta normalizado.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+- Se ha decidido dividir 
+\begin_inset Formula $R$
+\end_inset
+
+ en las siguientes relaciones 
+\begin_inset Formula $S(A,B,C,D,F)$
+\end_inset
+
+ y 
+\begin_inset Formula $T(C,E)$
+\end_inset
+
+, ¿Se puede recuperar la información de 
+\begin_inset Formula $R$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Si se puede porque esas relaciones coinciden con la 
+\begin_inset Formula $3NF$
+\end_inset
+
+ que sabemos podemos recuperar información cuando esta en esa forma.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(6)
+\end_layout
+
+\end_inset
+
+Para cada uno de los esquemas, con su respectivo conjunto de dependencias
+ multivaluadas, resuelve los siguientes puntos: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(a)
+\end_layout
+
+\end_inset
+
+R(A,B,C,D) con DMV = 
+\begin_inset Formula $\{AB\twoheadrightarrow C,B\rightarrow D\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(b)
+\end_layout
+
+\end_inset
+
+R(A,B,C,D,E) con DMV = 
+\begin_inset Formula $\{A\twoheadrightarrow B,AB\rightarrow C,A\rightarrow D,AB\rightarrow E\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Encuentra todas las violaciones a la 
+\begin_inset Formula $4NF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Normaliza de acuerdo a la 
+\begin_inset Formula $4NF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+a.
+ Llave para R: ABC 
+\begin_inset Formula $AB\twoheadrightarrow C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $B\rightarrow D\quad violacion$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+S(B,D) con 
+\begin_inset Formula $B\rightarrow D$
+\end_inset
+
+ Llave B para S normalizado
+\end_layout
+
+\begin_layout Standard
+
+\size large
+T(B,A,C) con 
+\begin_inset Formula $AB\twoheadrightarrow C$
+\end_inset
+
+ La llave es AB no puede haber violacion
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $b.LlaveparaR:AB$
+\end_inset
+
+E
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $DMV=\{A\twoheadrightarrow B,AB\rightarrow CE,A\rightarrow D\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $AB\rightarrow CE$
+\end_inset
+
+ Violacion 
+\begin_inset Formula $A\rightarrow D$
+\end_inset
+
+ Violacion S(A,B,C)
+\begin_inset Formula $conAB\rightarrow C$
+\end_inset
+
+ La llave de S es AB no hay violacion normalizado
+\end_layout
+
+\begin_layout Standard
+
+\size large
+T(A,D,E) con 
+\begin_inset Formula $A\Rightarrow D$
+\end_inset
+
+ llave es Violacion
+\end_layout
+
+\begin_layout Standard
+
+\size large
+U(A,D) con 
+\begin_inset Formula $A\Rightarrow D$
+\end_inset
+
+ La llave es A no hay violacion V(A,E) con 
+\begin_inset Formula $AE\Rightarrow AE$
+\end_inset
+
+ trivial normalizado.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+V(A,B) con 
+\begin_inset Formula $A\twoheadrightarrow B$
+\end_inset
+
+ Trivial Normalizado.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+(7)
+\end_layout
+
+\end_inset
+
+Se tiene la siguiente relación: 
+\begin_inset Formula 
+\begin{multline*}
+R(idEnfermo,idCirujano,fechaCirugía,nombreEnfermo,direcciónEnfermo,\\
+nombreCirujano,nombreCirugía,medicinaSuministrada,efectosSecundarios)
+\end{multline*}
+
+\end_inset
+
+Digamos que: 
+\begin_inset Formula 
+\begin{align*}
+idEnfermo & :=IDE & idCirujano & :=IDC\\
+nombreEnfermo & :=NE & nombreCirujano & :=NC\\
+direccionEnfermo & :=DE & medicinaSuministrada & :=M\\
+fechaCirugía & :=FC & efectosSecundarios & :=E\\
+nombreCirugía & :=NC
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size large
+Expresa las siguientes restricciones en forma de dependencias funcionales:
+ A un enfermo sólo se le da una medicina suministrada.
+ Sólo puede existir un efecto secundario por medicamento.
+ 
+\begin_inset Formula 
+\begin{align*}
+IDE & \rightarrow M & M & \rightarrow E
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\size large
+Especifica otras dependencias funcionales o multivaluadas que deban satisfacerse
+ en la relación R.
+ Por cada una que definas, deberá aparecer un enunciado en español como
+ en el inciso anterior.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $IDE\rightarrow NE$
+\end_inset
+
+ Un enfermo sólo tiene un nombre.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $IDE\rightarrow DE$
+\end_inset
+
+ Un enfermo sólo tiene una dirección.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $IDC\rightarrow NC$
+\end_inset
+
+ Un cirujano sólo tiene un nombre.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $NC\rightarrow FC$
+\end_inset
+
+ Una cirugía sólo tiene una fecha.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $FC\twoheadrightarrow NC$
+\end_inset
+
+ Una fecha puede tener varias cirugías.
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula $E\twoheadrightarrow M$
+\end_inset
+
+ Un efecto Secundario puede ser provacado por varios medicamentos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size large
+Normaliza utilizando el conjunto de dependencias establecido en los puntos
+ anteriores.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\size large
+R(IDE,IDC,NE,NC,DE,M,FC,E)
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $F=\{IDE\rightarrow M,M\rightarrow E,IDE\rightarrow NE,IDE\rightarrow DE,IDC\rightarrow NC,NF\rightarrow FC,FC\twoheadrightarrow NC,E\twoheadrightarrow M\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $F=\{IDE\rightarrow MNEDE,M\rightarrow E,IDC\rightarrow NC,NC\rightarrow FC,FC\twoheadrightarrow NC,E\twoheadrightarrow M\}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ Una llave para R: IDE,IDC,N,CM.
+\begin_inset Newline newline
+\end_inset
+
+ Todo es violacion
+\begin_inset Newline newline
+\end_inset
+
+ S(IDE,M,NE,DE) con 
+\begin_inset Formula $IDE\rightarrow MNEDE$
+\end_inset
+
+ llave para S IDE no hay violacion.
+\begin_inset Newline newline
+\end_inset
+
+ T(IDE,NC,IDC,FC,E) con 
+\begin_inset Formula $IDC\rightarrow NC,NC\rightarrow FC$
+\end_inset
+
+ con 
+\begin_inset Formula $DMV=\{FC\twoheadrightarrow NC\}$
+\end_inset
+
+ una llave para T es IDE,IDC,E hay violacion y tambien se perdio la dependencia
+ multivaluada 
+\begin_inset Formula $E\twoheadrightarrow M$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+ U(IDC,NC) con 
+\begin_inset Formula $IDC\rightarrow NC$
+\end_inset
+
+ Llave para U IDC no hay violacion
+\begin_inset Newline newline
+\end_inset
+
+ V(IDC,IDE,FC,E) con 
+\begin_inset Formula $IDCIDEFC\rightarrow IDCIDEFC$
+\end_inset
+
+ trivialno hay violacion
+\begin_inset Newline newline
+\end_inset
+
+ Se pierde las siguiente dependencias funcionales: 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $M\rightarrow E,FC\twoheadrightarrow NC,E\twoheadrightarrow M$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_body
+\end_document
