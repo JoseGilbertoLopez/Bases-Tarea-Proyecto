@@ -12,8 +12,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
-        es_empleado.
-        
+        es_empleado.getText();
         medico.setVisible(false);
         empleado.setVisible(false);
     }
