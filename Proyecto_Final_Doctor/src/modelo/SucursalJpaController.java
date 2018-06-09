@@ -20,6 +20,7 @@ import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import modelo.EmpleadoSucursal;
 import modelo.Sucursal;
 import modelo.SucursalMedicamento;
@@ -35,7 +36,7 @@ public class SucursalJpaController implements Serializable {
      * @param emf 
      */
     public SucursalJpaController() {
-        this.emf = emf;
+        this.emf = Persistence.createEntityManagerFactory("Proyecto_Final_DoctorPU") ;
     }
     private EntityManagerFactory emf = null;
 
