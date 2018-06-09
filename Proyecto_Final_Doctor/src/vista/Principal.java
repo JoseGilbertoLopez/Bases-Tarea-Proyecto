@@ -1,12 +1,19 @@
 package vista;
+import java.util.LinkedList;
+import java.util.List;
 import javax.swing.*;
-import modelo.ClienteReceta;
+import modelo.Sucursal;
+import modelo.SucursalJpaController;
 
 /**
  *
  * @author naranjo
  */
 public class Principal extends javax.swing.JFrame {
+    
+    //Atributos Controladores de la base de datos.
+    SucursalJpaController CSucursal = new SucursalJpaController();
+   
 
     /**
      * Creates new form Principal
@@ -15,10 +22,10 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
         medico.setVisible(false);
         empleado.setVisible(false);
-        
-        ClienteReceta cr = new ClienteReceta();
-        System.out.println(cr.getNombre());
-        
+        List <Sucursal> suc = CSucursal.findSucursalEntities();
+        for(Sucursal s : suc){
+            System.out.println(s.getDireccion());
+        }   
     }
     
     public void registrar(JPanel j){

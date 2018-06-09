@@ -30,10 +30,18 @@ import modelo.SucursalMedicamento;
  */
 public class SucursalJpaController implements Serializable {
 
-    public SucursalJpaController(EntityManagerFactory emf) {
+    /**
+     * Cambiamos por la unidad de percistencia del proyecto.
+     * @param emf 
+     */
+    public SucursalJpaController() {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
+
+    public SucursalJpaController() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();
