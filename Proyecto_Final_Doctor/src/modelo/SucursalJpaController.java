@@ -34,7 +34,7 @@ public class SucursalJpaController implements Serializable {
      * Cambiamos por la unidad de percistencia del proyecto.
      * @param emf 
      */
-    public SucursalJpaController() {
+    public SucursalJpaController(EntityManagerFactory emf) {
         this.emf = emf;
     }
     private EntityManagerFactory emf = null;
