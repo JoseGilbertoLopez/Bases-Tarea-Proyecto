@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Proyecto_Final_DoctorPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelo.RecetaInformacionEspecial</class>
+    <class>modelo.MedicoInformacionContacto</class>
+    <class>modelo.CompraInformacionGeneral</class>
+    <class>modelo.MedicoReceta</class>
+    <class>modelo.IntendenciaInfoSucursal</class>
+    <class>modelo.EmpleadoInformacionContacto</class>
+    <class>modelo.ResponsableInfoPersonal</class>
+    <class>modelo.CompraInformacionSucven</class>
+    <class>modelo.MostradorInfoSucursal</class>
+    <class>modelo.IntendenciaInfoContacto</class>
+    <class>modelo.RecetaInformacionConsulta</class>
+    <class>modelo.TelefonosSucursales</class>
+    <class>modelo.GeneralInfoPersonal</class>
+    <class>modelo.EmpleadoInformacionPersonal</class>
+    <class>modelo.MedicamentoReceta</class>
+    <class>modelo.MedicamentoCompra</class>
+    <class>modelo.MedicoInformacionPersonal</class>
+    <class>modelo.Especialidad</class>
+    <class>modelo.EmpleadoSucursal</class>
+    <class>modelo.TelefonoSucursal</class>
+    <class>modelo.ClienteReceta</class>
+    <class>modelo.ResponsableInfoSucursal</class>
+    <class>modelo.GeneralInfoSucursal</class>
+    <class>modelo.SucursalMedicamento</class>
+    <class>modelo.IntendenciaInfoPersonal</class>
+    <class>modelo.ClienteInformacionContacto</class>
+    <class>modelo.Presentacion</class>
+    <class>modelo.MostradorInfoPersonal</class>
+    <class>modelo.GeneralInfoContacto</class>
+    <class>modelo.MostradorInfoContacto</class>
+    <class>modelo.EmpleadoInformacionSucursal</class>
+    <class>modelo.ResponsableInfoContacto</class>
+    <class>modelo.Sucursal</class>
+    <class>modelo.Ingrediente</class>
+    <class>modelo.Medicamento</class>
+    <class>modelo.MedicoInformacionSucursal</class>
+    <class>modelo.ClienteInformacionPersonal</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+      <property name="javax.persistence.jdbc.user" value="Usuario_Final_Doctor"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="password"/>
+    </properties>
+  </persistence-unit>
+</persistence>
