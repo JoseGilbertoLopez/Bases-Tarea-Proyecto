@@ -35,19 +35,14 @@ public class SucursalJpaController implements Serializable {
      * Cambiamos por la unidad de percistencia del proyecto.
      * @param emf 
      */
-<<<<<<< HEAD
-    public SucursalJpaController(EntityManagerFactory emf) {
-        this.emf = emf;
-=======
     public SucursalJpaController() {
         this.emf = Persistence.createEntityManagerFactory("Proyecto_Final_DoctorPU") ;
->>>>>>> 8371d5b425d6093cb27155109521731abb54d505
     }
     private EntityManagerFactory emf = null;
 
-    public SucursalJpaController() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    //public SucursalJpaController() {
+    //    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //}
 
     public EntityManager getEntityManager() {
         return emf.createEntityManager();

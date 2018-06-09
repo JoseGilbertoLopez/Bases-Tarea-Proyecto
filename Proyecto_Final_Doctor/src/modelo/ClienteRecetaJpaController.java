@@ -13,6 +13,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import modelo.ClienteInformacionPersonal;
@@ -32,7 +33,7 @@ public class ClienteRecetaJpaController implements Serializable {
     private EntityManagerFactory emf = null;
 
     public ClienteRecetaJpaController() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        this.emf = Persistence.createEntityManagerFactory("Proyecto_Final_DoctorPU"); //To change body of generated methods, choose Tools | Templates.
     }
 
     public EntityManager getEntityManager() {
